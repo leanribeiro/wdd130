@@ -1,8 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Rock+Salt&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #05006e;
+  --secondary-color: #aeadf0;
+  --accent1-color: #d8dcff;
+  --accent2-color: #c38d94;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Rock Salt";
+  --paragraph-font: Roboto;
+}
+
+body {
+  margin: 0;
+}
+header{
+  display: grid;
+  background-color: var(--secondary-color);
+  grid-template-columns: 150px auto;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  text-align: center;
+  color: rgba(19, 2, 105, 0.7);
+  text-decoration: none;
+  text-align: center;
+  padding: 35px;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+}
+
+p {
+  font-family: var(--paragraph-font);
+}
+
 .logo {
   width: 110px;
   height: 110px;
 }
-.imgHome{
+
+.imgHome {
   width: 30em;
   height: 30em;
+}
+
+.socialMediaLogo {
+  width: 20px;
+  height: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.heroImg {
+  width: 100%;
+  height: 20em;
+}
+
+.imgBellow {
+  position: relative;
+  grid-column: 3/4;
+}
+
+.imgUpper {
+  position: relative;
+  top: -200px;
+  right: 200px;
+  grid-column: 4;
+  grid-row-start: 2;
+}
+
+.introducerText {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  align-items: center;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--secondary-color);
+}
+.footerContent > div {
+  margin: auto;
+}
+.contetHeader{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
