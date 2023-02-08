@@ -1,4 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Rock+Salt&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #05006e;
+  --secondary-color: #aeadf0;
+  --accent1-color: #d8dcff;
+  --accent2-color: #c38d94;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Rock Salt";
+  --paragraph-font: Roboto;
+}
+body {
+  margin: 0;
+  background-color: var(--accent1-color);
+}
+header{
+  display: grid;
+  background-color: var(--secondary-color);
+  grid-template-columns: 150px auto;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  text-align: center;
+  color: rgba(19, 2, 105, 0.7);
+  text-decoration: none;
+  text-align: center;
+  padding: 35px;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+}
+p {
+  font-family: var(--paragraph-font);
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--secondary-color);
+}
+footer > div {
+  margin: auto;
+}
+
 .logo {
   width: 110px;
   height: 110px;
+}
+.firstRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px;
+}
+.secondRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.leftTextInformation{
+    width: 30%;
+
+}
+.rightTextInformation{
+  width: 30%;
+}
+.imgCodePage {
+  width: 20em;
+  height: 20em;
+  margin: 10px;
+}
+.socialMediaLogo {
+  width: 20px;
+  height: 20px;
 }

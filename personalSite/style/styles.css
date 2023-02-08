@@ -36,9 +36,22 @@ h2,
 h3 {
   font-family: var(--heading-font);
 }
-
 p {
   font-family: var(--paragraph-font);
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--secondary-color);
+}
+footer > div {
+  margin: auto;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .logo {
@@ -86,15 +99,3 @@ p {
   align-items: center;
 }
 
-.footerContent {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: var(--secondary-color);
-}
-.footerContent > div {
-  margin: auto;
-}
-.contetHeader{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
