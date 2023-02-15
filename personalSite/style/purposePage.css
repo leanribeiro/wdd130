@@ -1,4 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Rock+Salt&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #05006e;
+  --secondary-color: #aeadf0;
+  --accent1-color: #d8dcff;
+  --accent2-color: #c38d94;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Rock Salt";
+  --paragraph-font: Roboto;
+}
+body {
+  margin: 0;
+}
+header{
+  display: grid;
+  background-color: var(--secondary-color);
+  grid-template-columns: 150px auto;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  text-align: center;
+  color: rgba(19, 2, 105, 0.7);
+  text-decoration: none;
+  text-align: center;
+  padding: 35px;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+}
+p {
+  font-family: var(--paragraph-font);
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--secondary-color);
+}
+footer > div {
+  margin: auto;
+}
 .logo {
   width: 110px;
   height: 110px;
+}
+/* content Main */
+/* .content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+} */
+.firstRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.secondRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.imgHome {
+  width: 25em;
+  height: 25em;
+}
+
+.aboutMeContainer{
+  width: 30em;
+  height: 30em;
+  text-align: center;
+}
+
+/* Socia logo */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-github {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
 }
